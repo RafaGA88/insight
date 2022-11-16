@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TabelaContratos = styled.div`
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 50px;
   width: 1200px;
   height: 600;
