@@ -1,18 +1,15 @@
 import styled from 'styled-components';
 
-export const ContainerFlex = styled.section`
-  height: 100%;
-  width: 225px;
-  background-color: #d9d9d9;
-  margin-top: 50px;
-  padding: 70px 100px 70px 100px;
+export const ContainerPrincipalFlex = styled.section`
+  height: 100vh;
+  width: 170px;
+  background-image: linear-gradient(to right, white, #dfe3eb);
+  padding: 25px 0px 70px 0px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 40px;
 
   div:hover {
-    background-color: rgba(151, 151, 151, 80%);
+    background-color: rgba(255, 255, 255, 80%);
   }
 
   a:hover {
@@ -25,15 +22,21 @@ export const ContainerBlock = styled.section`
 `;
 
 export const ContainerAbas = styled.div`
-  padding: 30px 60px 30px 60px;
-  background-color: #979797;
-  margin-bottom: 20px;
-  border-radius: 20px;
+  padding: 30px 50px 10px 50px;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 28px;
+  color: #4791ff;
 
   h2 {
     font-size: 15px;
   }
+`;
+
+export const ContainerFlex = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 `;

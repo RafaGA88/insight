@@ -1,32 +1,54 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { ContainerFlex, ContainerAbas, ContainerBlock } from './styled';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { MdHome, MdHistory, MdAccountBalanceWallet } from 'react-icons/md';
+import {
+  ContainerPrincipalFlex,
+  ContainerAbas,
+  ContainerBlock,
+  ContainerFlex,
+} from './styled';
 
 export default function MenuLateral() {
   return (
-    <ContainerFlex>
+    <ContainerPrincipalFlex>
       <ContainerBlock>
+        <ContainerAbas>
+          <ContainerBlock>
+            <AiOutlineMenu />
+          </ContainerBlock>
+        </ContainerAbas>
         <NavLink to="/">
           <ContainerAbas>
-            <h2>Início</h2>
+            <ContainerBlock>
+              <ContainerFlex>
+                <MdHome />
+              </ContainerFlex>
+              <h2>Início</h2>
+            </ContainerBlock>
           </ContainerAbas>
         </NavLink>
         <NavLink to="/contratos_ativos">
           <ContainerAbas>
-            <h2>Contratos Ativos</h2>
+            <ContainerBlock>
+              <ContainerFlex>
+                <MdAccountBalanceWallet />
+              </ContainerFlex>
+              <h2>Contratos</h2>
+            </ContainerBlock>
           </ContainerAbas>
         </NavLink>
         <NavLink to="/historico">
           <ContainerAbas>
-            <h2>Histórico</h2>
-          </ContainerAbas>
-        </NavLink>
-        <NavLink to="/contratar">
-          <ContainerAbas>
-            <h2>Contratar+</h2>
+            <ContainerBlock>
+              <ContainerFlex>
+                <MdHistory />
+              </ContainerFlex>
+              <h2>Histórico</h2>
+            </ContainerBlock>
           </ContainerAbas>
         </NavLink>
       </ContainerBlock>
-    </ContainerFlex>
+    </ContainerPrincipalFlex>
   );
 }

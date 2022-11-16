@@ -9,8 +9,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
   body{
-    font-family: sans-serif;
+    font-family: 'Poppins';
+    font-style: normal;
     color: white;
+    background-color: #dfe3eb;
   }
 
   html, border-style, #root{
@@ -31,7 +33,8 @@ export default createGlobalStyle`
     text-decoration: none;
   }
   a:visited{
-    color: white;
+    text-decoration: none;
+    color: #4791ff;
   }
 
   ul{
@@ -41,5 +44,10 @@ export default createGlobalStyle`
 
 export const GlobalContainer = styled.div`
   display: flex;
-  justify-content: center;
+  width: 100%;
+`;
+
+export const GlobalContainerBlock = styled.div`
+  display: block;
+  width: 100%;
 `;
